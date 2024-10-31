@@ -1,0 +1,20 @@
+{
+	"name": "terra",
+	"scripts": {
+		"dev": "bun run --watch src/index.ts"
+	},
+	"dependencies": {
+		"@types/cheerio": "^0.22.35",
+		"@types/pdfkit": "^0.13.5",
+		"@types/puppeteer": "^7.0.4",
+		"axios": "^1.7.7",
+		"cheerio": "^1.0.0",
+		"hono": "^4.6.8",
+		"pdf-lib": "^1.17.1",
+		"pdfkit": "^0.15.1",
+		"puppeteer": "^23.6.1"
+	},
+	"devDependencies": {
+		"@types/bun": "latest"
+	}
+}
