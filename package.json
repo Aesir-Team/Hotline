@@ -1,7 +1,7 @@
 {
 	"name": "terra",
 	"scripts": {
-		"dev": "bun run --watch src/index.ts"
+		"dev": "bun run --watch --env-file=.env src/index.ts"
 	},
 	"dependencies": {
 		"@types/cheerio": "^0.22.35",
