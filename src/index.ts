@@ -1,4 +1,3 @@
-import { serve } from "bun";
 import { Hono } from "hono";
 import { AppMiddlewares } from "./common/middleware/app";
 import { DefineRoutes } from "./common/middleware/routes";
