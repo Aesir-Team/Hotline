@@ -1,7 +1,7 @@
 import type { Context } from "hono";
 import { SwitchProviders } from "../../utils/switchProviders";
 import Invariant from "../../../../common/utils/invariant";
-import { ExtractSearchResults } from "../interfaces/kakusei";
+import { ExtractSearchResults } from "../extractors/search";
 
 export const KakuseiSearch = async (c: Context) => {
 	try {

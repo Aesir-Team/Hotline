@@ -9,9 +9,6 @@ const routes = {
 };
 
 export default function KakuseiController(app: Hono) {
-	app.get(routes.homePage(), async (c) => {
-		return c.text("Hello World!");
-	});
 	app.get(routes.searchPage(), async (c) => {
 		return KakuseiSearch(c);
 	});
