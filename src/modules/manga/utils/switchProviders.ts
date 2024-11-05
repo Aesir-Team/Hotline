@@ -1,5 +1,5 @@
-import { KakuseiController } from "../providers/kakusei";
-import { LeitoDeMangaController } from "../providers/leitordemanga";
+import { KakuseiController } from "../kakusei/providers/kakusei";
+import { LeitoDeMangaController } from "../leitordemanga/providers/leitordemanga";
 
 const Controllers = {
 	Kakusei: KakuseiController,
