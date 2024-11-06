@@ -32,4 +32,7 @@ export const LeitoDeMangaController = {
 		`${baseUrl}/ler-manga/${encodeURIComponent(slug)}`,
 	getChapters: (slug: string) =>
 		`${baseUrl}/manga/${encodeURIComponent(slug)}/ajax/chapters/`,
+
+	getImages: (slug: string, cap: string) =>
+		`${baseUrl}/manga/${slug}/${cap}/?style=list`,
 };

@@ -1,3 +1,5 @@
+import { sleep } from "bun";
+
 const baseUrl = "https://kakuseiproject.com";
 
 type Genres = {
@@ -49,4 +51,6 @@ export const KakuseiController = {
 	infoManga: (slug: string) => `${baseUrl}/manga/${encodeURIComponent(slug)}`,
 	getChapters: (slug: string) =>
 		`${baseUrl}/manga/${encodeURIComponent(slug)}/ajax/chapters/`,
+	getImages: (slug: string, cap: string) =>
+		`${baseUrl}/manga/${slug}/capitulo-${cap}/?style=list`,
 };
