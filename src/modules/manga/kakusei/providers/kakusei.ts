@@ -47,4 +47,6 @@ export const KakuseiController = {
 	newMangas: () => `${baseUrl}/?s&post_type=wp-manga&m_orderby=new-manga`,
 	mostViewed: () => `${baseUrl}/?s&post_type=wp-manga&m_orderby=views`,
 	infoManga: (slug: string) => `${baseUrl}/manga/${encodeURIComponent(slug)}`,
+	getChapters: (slug: string) =>
+		`${baseUrl}/manga/${encodeURIComponent(slug)}/ajax/chapters/`,
 };

@@ -7,7 +7,7 @@ export const ExtractHomeResults = (html: string): KakuseiHomeManga => {
 	$(".page-listing-item").each((_, element) => {
 		const mangaItems = $(element).find(".row.row-eq-height .col-6.col-md-2");
 
-		mangaItems.each((i, mangaElement) => {
+		mangaItems.each((_, mangaElement) => {
 			const titleElement = $(mangaElement).find(".post-title a");
 			const title = titleElement.text().trim();
 			const url = titleElement.attr("href") || "";

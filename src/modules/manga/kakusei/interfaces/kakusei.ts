@@ -26,3 +26,9 @@ interface KakuseiHomeMangaItem {
 interface KakuseiHomeManga {
 	mangaList: KakuseiHomeMangaItem[];
 }
+
+interface KakuseiChapterManga {
+	title: string;
+	link: string;
+	releaseDate: string;
+}

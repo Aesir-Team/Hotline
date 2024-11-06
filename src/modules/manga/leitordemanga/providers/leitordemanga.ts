@@ -21,10 +21,15 @@ type Generos = {
 
 export const LeitoDeMangaController = {
 	homePage: () => `${baseUrl}`,
-	searchManga: (slug: string) => `${baseUrl}/?s=${encodeURIComponent(slug)}&post_type=wp-manga`,
-	searchMangaPerGenre: (genre: keyof Generos) => `${baseUrl}/manga-genero/${genre}`,
+	searchManga: (slug: string) =>
+		`${baseUrl}/?s=${encodeURIComponent(slug)}&post_type=wp-manga`,
+	searchMangaPerGenre: (genre: keyof Generos) =>
+		`${baseUrl}/manga-genero/${genre}`,
 	latestMangas: () => `${baseUrl}/?s=&post_type=wp-manga&m_orderby=latest`,
 	newMangas: () => `${baseUrl}/?s=&post_type=wp-manga&m_orderby=new-manga`,
 	mostViewed: () => `${baseUrl}/?s=&post_type=wp-manga&m_orderby=views`,
-	infoManga: (slug: string) => `${baseUrl}/ler-manga/${encodeURIComponent(slug)}`,
+	infoManga: (slug: string) =>
+		`${baseUrl}/ler-manga/${encodeURIComponent(slug)}`,
+	getChapters: (slug: string) =>
+		`${baseUrl}/manga/${encodeURIComponent(slug)}/ajax/chapters/`,
 };
