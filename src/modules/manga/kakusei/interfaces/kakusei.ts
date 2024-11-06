@@ -11,3 +11,18 @@ interface KakuseiSearchManga {
 	lastUpdated: string;
 	rating: string;
 }
+
+interface KakuseiHomeMangaItem {
+	title: string;
+	url: string;
+	imgSrc: string;
+	rating: string;
+	chapters: {
+		title: string;
+		link: string;
+	}[];
+}
+
+interface KakuseiHomeManga {
+	mangaList: KakuseiHomeMangaItem[];
+}
